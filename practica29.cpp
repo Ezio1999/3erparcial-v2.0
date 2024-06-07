@@ -62,3 +62,6 @@ int main()
     }
     return 0;
 }
+
+
+//modificar con varios clientes con cualquier nombre, al momento de dar 0 preguntar si va haber otra venta 

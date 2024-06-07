@@ -1,4 +1,4 @@
-/*buenos dias, buenas tardes y buenas noches*/
+/*En un formato 1-24 emitirá un mensaje de buenos días, buenas tardes, buenas noches*/
 
 #include <iostream>
 using namespace std;
@@ -8,7 +8,7 @@ int main(){
     cout << "Ingrese la hora: " << endl;
     cin >> hora;
     if ( hora >= 6 && hora <= 11){
-        cout << "Buenos dias :)" << endl; 
+        cout << "Buenos días :)" << endl; 
     }
     else if ( hora >= 12 && hora <= 19){
         cout << "Buenas tardes :)" << endl;
