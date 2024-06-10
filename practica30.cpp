@@ -1,7 +1,7 @@
 /**/
 #include <iostream>
 #include <string.h>
-unsing namespaces std;
+using namespace std;
 
 int acum = 0;
 
