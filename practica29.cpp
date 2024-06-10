@@ -1,4 +1,4 @@
-// v2: pida nombre, contraseña y de 3 oportunidades
+// Extender con la estructura while y if condicional 
 #include <iostream>
 #include <string.h>
 using namespace std;

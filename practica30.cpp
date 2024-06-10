@@ -1,4 +1,4 @@
-/**/
+/*Extender el programa 30 con estructura*/
 #include <iostream>
 #include <string.h>
 using namespace std;
