@@ -37,15 +37,21 @@ void promedio(int not1, int not2, int not3)
 // Funcion principal
 int main()
 {
-    int not1, not2, not3;
-    cout << "Ingrese la nota del estudiante correspondiente al primer examen: ";
-    cin >> not1;
-    cout << "Ingrese la nota del estudiante correspondiente al segundo examen: ";
-    cin >> not2;
-    cout << "Ingrese la nota del estudiante correspondiente al tercer examen: ";
-    cin >> not3;
-    promedio(not1, not2, not3);
-    cal(not1, not2, not3);
+        char resp;
+        int not1, not2, not3;
+    do
+    {
+        cout << "Ingrese la nota del estudiante correspondiente al primer examen: ";
+        cin >> not1;
+        cout << "Ingrese la nota del estudiante correspondiente al segundo examen: ";
+        cin >> not2;
+        cout << "Ingrese la nota del estudiante correspondiente al tercer examen: ";
+        cin >> not3;
+        promedio(not1, not2, not3);
+        cal(not1, not2, not3);
+        cout << "Si desea ingresar otra calificacion, ingrese cualquier letra menos (s)";
+        cin >> resp;
+    } while (resp != 's');
 
     return 0;
 }
