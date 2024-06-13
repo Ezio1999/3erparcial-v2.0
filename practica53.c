@@ -1,8 +1,9 @@
 #include <stdio.h>
-float CalcularMax ( float x, float y);
-float CalcularNota ( float p1, float p2, float p3);
+float CalcularMax(float x, float y);
+float CalcularNota(float p1, float p2, float p3);
 
-int main(void){
+int main(void)
+{
     char c;
     do
     {
@@ -13,7 +14,7 @@ int main(void){
         printf("Introduzca la nota parcial 2 [0, 10]: ");
         scanf("%f", &parcial2);
         printf("Introduzca la nota examen final [0, 10]: ");
-        scanf("%f", &examen );
+        scanf("%f", &examen);
         /*Calcular nota final*/
         final = CalcularNota(parcial1, parcial2, examen);
 
@@ -29,25 +30,29 @@ int main(void){
             scanf("%c", &c);
         } while (c == '\n');
         printf("\n");
-        
+
     } while (c != 's');
-    
+
     return 0;
 }
 
-float CalcularNota( float p1, float p2, float nonatexamen){
+float CalcularNota(float p1, float p2, float nonatexamen)
+{
     float notaEc, final;
-    notaEc = p1*0.2+p2*0.2+nonatexamen*0.6;
+    notaEc = p1 * 0.2 + p2 * 0.2 + nonatexamen * 0.6;
     final = CalcularMax(notaEc, nonatexamen);
     return final;
 }
 
-float CalcularMax(float x, float y){
+float CalcularMax(float x, float y)
+{
     float max;
-    if (x >= y){
+    if (x >= y)
+    {
         max = x;
     }
-    else{
+    else
+    {
         max = y;
     }
     return max;
