@@ -1,20 +1,29 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
+
 int main()
 {
-    int matriz[3, 3];
-    int i, j, azar[10];
-    for (i = 1; i <= 3; i++)
+    srand(time(0));
+    int matriz[3][3];
+
+    for (int i = 0; i < 3; i++)
     {
-        for (j = 1; j <= 3; j++)
+        for (int j = 0; j < 3; j++)
         {
-            matriz[i, j] = azar[10];
+            matriz[i][j] = rand() % 10;
         }
     }
-    for (i = 1; i <= 3; i++)
-    {
-        cout << matriz[i, 1] << " " << matriz[1,2] << " " << matriz [1,3] << endl;
-    }
 
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            cout << matriz[i][j] << " ";
+        }
+        cout << endl;
+    }
+    
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+i1nt main()
 {
     int f, c, i, j, numero;
     cout << "Digite el numero de files: " << endl;
